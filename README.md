@@ -43,15 +43,9 @@ All C++ and JS code is thoroughly commented and furthermore tries to follow the 
 - RFID
 - Bipolar Stepper Controller
 
-### To Build
-```bash
-npm install -g node-gyp
-make
-```
-
 ### To Test
 ```bash
-make test
+npm test
 ```
 
 ---
@@ -64,6 +58,6 @@ Want to contribute? OMGFTWBBQ you're awesome! ...but, please try to follow these
 - Comment your code
 
 ### FAQ
-- *Will this work with the Arduino?* Nope. But there are already a [couple]() [really]() [great]() Node.js projects that support the Arduino that you should check out.
+- **Will this work with the Arduino?** Nope. But there are already a [couple]() [really]() [great]() Node.js projects that support the Arduino that you should check out.
 
-- *Why Phidgets?* I've used Phidgets for a number of strange things over the years – from installations in football stadiums to traveling exhibits to even toy prototypes and have found them to be particularly easy to work with and generally pretty robust given how inexpensive they are. The `phidget21` C++ library is also pretty well documented and provided a good base on which to build bindings.
+- **Why Phidgets?** I've used Phidgets for a number of strange things over the years – from installations in football stadiums to traveling exhibits to even toy prototypes and have found them to be particularly easy to work with and generally pretty robust given how inexpensive they are. The `phidget21` C++ library is also pretty well documented and provided a good base on which to build bindings.
