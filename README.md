@@ -38,7 +38,7 @@ All C++ and JS code is thoroughly commented and furthermore tries to follow the 
 ### Currently Supported Devices
 - [Advanced Servo](https://github.com/thisandagain/phidget/wiki/Advanced-Servo) (8 and 1 Motor Versions)
 
-### Planned Devices
+### In Progress
 - RFID
 - 8/8/8 Interface Kit
 - Bipolar Stepper Controller
