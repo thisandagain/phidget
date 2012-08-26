@@ -1,7 +1,7 @@
 ## Phidget
 #### Node.js bindings for the [Phidget](http://www.phidgets.com/) line of USB sensor and control interfaces.
 
-The `phidget` module provides a simple way to to communicate with Phidget boards via Node. Rather than rely on Phidget's webserver interface, the module is based on Phidget's own C++ library using a series of C++ bindings leveraging `node-gyp` which make it both easy to configure and pretty speedy when compaired to using TCP/IP.
+The `phidget` module provides a simple way to to communicate with Phidget boards via Node. Rather than rely on Phidget's webserver interface, the module is based on Phidget's own C library using a series of C++ bindings leveraging `node-gyp` which make it both easy to configure and pretty speedy when compaired to using TCP/IP.
 
 ### To Install
 First, make sure you have installed the Phidgets driver on your system. Then,
