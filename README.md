@@ -57,6 +57,6 @@ Want to contribute? OMGFTWBBQ you're awesome! ...but, please try to follow these
 - Comment your code
 
 ### FAQ
-- **Will this work with the Arduino?** Nope. But there are already a [couple]() [really]() [great]() Node.js projects for the Arduino that you should check out.
+- **Will this work with the Arduino?** Nope. But there are already a [couple](https://github.com/rwldrn/johnny-five) [really](https://github.com/jgautier/firmata) [great](https://github.com/voodootikigod/node-serialport) Node.js projects for the Arduino that you should check out.
 
 - **Why Phidgets?** I've used Phidgets for a number of strange things over the years – from installations in football stadiums to traveling exhibits to even toy prototypes and have found them to be particularly easy to work with and generally robust given how inexpensive they are. The `phidget21` C library is also [well documented](http://www.phidgets.com/documentation/web/cdoc/index.html) and provides a good base on which to build bindings.
