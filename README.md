@@ -1,5 +1,7 @@
 ## Phidget
-#### Node.js bindings for the Phidget line of USB sensor and control interfaces.
+#### Node.js bindings for the [Phidget](http://www.phidgets.com/) line of USB sensor and control interfaces.
+
+[![Build Status](https://secure.travis-ci.org/thisandagain/phidget.png?branch=master)](http://travis-ci.org/thisandagain/phidget)
 
 The `phidget` module provides a simple way to to communicate with Phidget boards via Node. Rather than rely on Phidget's webserver interface, the module is based on Phidget's own C++ library using a series of C++ bindings leveraging `node-gyp` which make it both easy to configure and pretty speedy when compaired to using TCP/IP.
 
