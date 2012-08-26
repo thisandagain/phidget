@@ -1,8 +1,21 @@
 {
-    "author": "Andrew Sliwinski",
+    "author": {
+        "name": "Andrew Sliwinski",
+        "email": "andrewsliwinski@acm.org",
+        "url": "http://andrewsliwinski.com"
+    },
     "name": "phidget",
     "description": "Node.js bindings for the Phidget line of USB sensor and control interfaces.",
+    "keywords" : [
+        "phidget",
+        "phidgets",
+        "servo"
+    ],
     "version": "0.1.0",
+    "repository" : {
+        "type" : "git",
+        "url" : "git://github.com/thisandagain/phidget.git"
+    },
     "main": "lib/index.js",
     "scripts": {
         "test": "tap test/ci_*.js"
