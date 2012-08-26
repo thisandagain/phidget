@@ -12,7 +12,7 @@ npm install phidget
 ### Basic Use
 In meatspace:
 ```bash
-- Attach a servo to connector "0" on your [Phidget Advanced Servo](http://www.phidgets.com/products.php?category=11&product_id=1066_0) board
+- Attach a servo to connector "0" on your Phidget "Advanced Servo" board
 - Plug-in your board via USB
 ```
 
