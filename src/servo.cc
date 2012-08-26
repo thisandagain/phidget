@@ -148,7 +148,7 @@ setPosition(const Arguments& args)
     for (;;) {
         CPhidgetAdvancedServo_getStopped(servo, args[0]->Int32Value(), &stopped);
 
-        if (stopped == 0) {
+        if (stopped == 1) {
             return scope.Close(Integer::NewFromUnsigned(0));
         }
     }
