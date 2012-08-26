@@ -16,7 +16,7 @@ In meatspace:
 - Plug-in your board via USB
 ```
 
-Meanwhile, in javascript land:
+Meanwhile, in [javascript land](http://www.nyan.cat/):
 ```javascript
 var phidget = require('phidget');
 
