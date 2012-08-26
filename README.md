@@ -36,10 +36,10 @@ servo.attach(function (err) {
 All C++ and JS code is thoroughly commented and furthermore tries to follow the [Phidget21 C API](http://www.phidgets.com/docs/Language_-_C/C%2B%2B) conventions where reasonable. While the project is in this early state, reading through the source code comments is a good way to get up and running with each device as it becomes available. That said, I have started a [wiki with examples for each device](https://github.com/thisandagain/phidget/wiki).
 
 ### Currently Supported Devices
-- Advanced Servo (8 and 1 Motor Versions)
-- RFID
+- [Advanced Servo](https://github.com/thisandagain/phidget/wiki/Advanced-Servo) (8 and 1 Motor Versions)
 
 ### Planned Devices
+- RFID
 - 8/8/8 Interface Kit
 - Bipolar Stepper Controller
 
