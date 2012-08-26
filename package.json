@@ -1,20 +1,19 @@
 {
-  "author": "Andrew Sliwinski",
-  "name": "phidget",
-  "description": "Phidget bindings for Node.js",
-  "version": "0.1.0",
-  "main": "lib/index.js",
-  "scripts": {
-    "start": "tap test/*.js"
-  },
-  "dependencies": {
-    "async": "~0.1.22"
-  },
-  "devDependencies": {
-    "tap": "~0.3.0"
-  },
-  "optionalDependencies": {},
-  "engines": {
-    "node": ">=0.6"
-  }
+    "author": "Andrew Sliwinski",
+    "name": "phidget",
+    "description": "Node.js bindings for the Phidget line of USB sensor and control interfaces.",
+    "version": "0.1.0",
+    "main": "lib/index.js",
+    "scripts": {
+        "test": "tap test/ci_*.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "async": "0.1.X",
+        "tap": "0.3.X"
+    },
+    "optionalDependencies": {},
+    "engines": {
+        "node": ">=0.6"
+    }
 }

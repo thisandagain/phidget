@@ -140,9 +140,28 @@ getPosition(const Arguments& args)
 Handle<Value>
 setPosition(const Arguments& args)
 {
+    int stopped;
+
     HandleScope scope;
     CPhidgetAdvancedServo_setPosition(servo, args[0]->Int32Value(), args[1]->Int32Value());
-    return scope.Close(Integer::NewFromUnsigned(0));
+
+    for (;;) {
+        CPhidgetAdvancedServo_getStopped(servo, args[0]->Int32Value(), &stopped);
+
+        if (stopped == 0) {
+            return scope.Close(Integer::NewFromUnsigned(0));
+        }
+    }
+}
+
+Handle<Value>
+getStopped(const Arguments& args)
+{
+    int stopped;
+
+    HandleScope scope;
+    CPhidgetAdvancedServo_getStopped(servo, args[0]->Int32Value(), &stopped);
+    return scope.Close(Integer::NewFromUnsigned(stopped));
 }
 
 // ------------------------------------------
@@ -159,6 +178,9 @@ void init(Handle<Object> target)
     target->Set(String::New("setEngaged"), FunctionTemplate::New(setEngaged)->GetFunction());
     target->Set(String::New("getPosition"), FunctionTemplate::New(getPosition)->GetFunction());
     target->Set(String::New("setPosition"), FunctionTemplate::New(setPosition)->GetFunction());
+
+    // Status
+    target->Set(String::New("getStopped"), FunctionTemplate::New(getStopped)->GetFunction());
 }
 
 NODE_MODULE(binding, init);

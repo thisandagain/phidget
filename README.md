@@ -12,7 +12,7 @@ npm install phidget
 In meatspace:
 ```bash
 - Install the Phidget library for your system (ok... pseduo meatspace)
-- Attach a servo to connector "0" on your Phidget servo board
+- Attach a servo to connector "0" on your [Phidget Advanced Servo](http://www.phidgets.com/products.php?category=11&product_id=1066_0) board
 - Plug-in your board via USB
 ```
 
@@ -20,27 +20,27 @@ Meanwhile, in javascript land:
 ```javascript
 var phidget = require('phidget');
 
-var servo   = new phidget.servo(function (err) {
-    servo.setPosition(0, 90, function (err) {
-        // It's alive!
+var servo = new phidget.servo();
+servo.attach(function (err) {
+    servo.setEngaged(0, true, function (err) {
+        servo.setPosition(0, 90, function (err) {
+            servo.setPosition(0, 180, function (err) {
+                // It's alive!
+            });
+        });
     });
 });
 ```
 
-### Less Basic Use
-```javascript
-
-```
-
 ### RTFC
-All C++ and JS code is thoroughly commented and furthermore tries to follow the [Phidget21 C API](http://www.phidgets.com/docs/Language_-_C/C%2B%2B) conventions where reasonable. While the project is in this early state, reading through the source code comments is probably the best way to get up and running with each device as it becomes available.
+All C++ and JS code is thoroughly commented and furthermore tries to follow the [Phidget21 C API](http://www.phidgets.com/docs/Language_-_C/C%2B%2B) conventions where reasonable. While the project is in this early state, reading through the source code comments is a good way to get up and running with each device as it becomes available. That said, I have started a [wiki with examples for each device](https://github.com/thisandagain/phidget/wiki).
 
 ### Currently Supported Devices
 - Advanced Servo (8 and 1 Motor Versions)
+- RFID
 
 ### Planned Devices
 - 8/8/8 Interface Kit
-- RFID
 - Bipolar Stepper Controller
 
 ### To Test
@@ -53,11 +53,10 @@ npm test
 ### Contribution
 Want to contribute? OMGFTWBBQ you're awesome! ...but, please try to follow these common sense guidelines:
 - Write a test
-- Don't break the build (see Travis-CI spec)
-- Follow the established format convention
+- Follow the established format conventions
 - Comment your code
 
 ### FAQ
-- **Will this work with the Arduino?** Nope. But there are already a [couple]() [really]() [great]() Node.js projects that support the Arduino that you should check out.
+- **Will this work with the Arduino?** Nope. But there are already a [couple]() [really]() [great]() Node.js projects for the Arduino that you should check out.
 
-- **Why Phidgets?** I've used Phidgets for a number of strange things over the years – from installations in football stadiums to traveling exhibits to even toy prototypes and have found them to be particularly easy to work with and generally pretty robust given how inexpensive they are. The `phidget21` C++ library is also pretty well documented and provided a good base on which to build bindings.
+- **Why Phidgets?** I've used Phidgets for a number of strange things over the years – from installations in football stadiums to traveling exhibits to even toy prototypes and have found them to be particularly easy to work with and generally robust given how inexpensive they are. The `phidget21` C library is also [well documented](http://www.phidgets.com/documentation/web/cdoc/index.html) and provides a good base on which to build bindings.
