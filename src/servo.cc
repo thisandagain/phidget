@@ -183,4 +183,4 @@ void init(Handle<Object> target)
     target->Set(String::New("getStopped"), FunctionTemplate::New(getStopped)->GetFunction());
 }
 
-NODE_MODULE(binding, init);
+NODE_MODULE(binding_servo, init);

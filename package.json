@@ -4,6 +4,12 @@
         "email": "andrewsliwinski@acm.org",
         "url": "http://andrewsliwinski.com"
     },
+    "contributors": [
+        {
+            "name": "Sinyeol An",
+            "email": "sinyeol.an@gmail.com"
+        }
+    ],
     "name": "phidget",
     "description": "Node.js bindings for the Phidget line of USB sensor and control interfaces.",
     "keywords" : [
