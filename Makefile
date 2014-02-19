@@ -3,7 +3,7 @@ build:
 
 webkit:
 	nw-gyp clean
-	nw-gyp configure --target=0.9.1
+	nw-gyp configure --target=0.8.4
 	nw-gyp build
 
 test:
