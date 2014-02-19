@@ -1,4 +1,7 @@
 build:
+	node-gyp rebuild
+
+webkit:
 	nw-gyp clean
 	nw-gyp configure --target=0.9.1
 	nw-gyp build
