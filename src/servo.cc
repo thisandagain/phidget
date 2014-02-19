@@ -115,6 +115,7 @@ close(const Arguments& args)
 
     CPhidget_close((CPhidgetHandle)servo);
     CPhidget_delete((CPhidgetHandle)servo);
+    printf("Phidget Advanced Servo is closed.\n");
 
     return scope.Close(Integer::NewFromUnsigned(0));
 }

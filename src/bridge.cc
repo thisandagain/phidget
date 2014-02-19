@@ -120,6 +120,7 @@ close(const Arguments& args)
 
     CPhidget_close((CPhidgetHandle)bridge);
     CPhidget_delete((CPhidgetHandle)bridge);
+    printf("Phidget Bridge is closed.\n");
 
     return scope.Close(Integer::NewFromUnsigned(0));
 }
