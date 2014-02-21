@@ -94,7 +94,7 @@ attach(const Arguments& args)
     // Registers a callback that will run when the sensor value is changed.
     // Requires the handle for the Phidget, the function that will be called,
     // and an arbitrary pointer that will be supplied to the callback function (may be NULL).
-    CPhidgetBridge_set_OnBridgeData_Handler((CPhidgetBridgeHandle)bridge, BridgeDataHandler, NULL);
+    //CPhidgetBridge_set_OnBridgeData_Handler((CPhidgetBridgeHandle)bridge, BridgeDataHandler, NULL);
 
     // Open the device for connections
     CPhidget_open((CPhidgetHandle)bridge, -1);
