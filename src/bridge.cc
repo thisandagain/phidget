@@ -132,7 +132,7 @@ getValue(const Arguments& args)
 
     HandleScope scope;
     CPhidgetBridge_getBridgeValue(bridge, args[0]->Int32Value(), &value);
-    return scope.Close(Integer::NewFromUnsigned(value));
+    return scope.Close(Number::New(value));
 }
 
 Handle<Value>
