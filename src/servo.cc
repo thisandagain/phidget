@@ -115,6 +115,7 @@ close(const Arguments& args)
 
     CPhidget_close((CPhidgetHandle)servo);
     CPhidget_delete((CPhidgetHandle)servo);
+    printf("Phidget Advanced Servo is closed.\n");
 
     return scope.Close(Integer::NewFromUnsigned(0));
 }
@@ -183,4 +184,4 @@ void init(Handle<Object> target)
     target->Set(String::New("getStopped"), FunctionTemplate::New(getStopped)->GetFunction());
 }
 
-NODE_MODULE(binding, init);
+NODE_MODULE(binding_servo, init);
